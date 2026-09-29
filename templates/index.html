@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tony Bot</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>🍝 Tony Bot</h1>
+        <div class="mood-row">
+          <span>Mood:</span>
+          <span id="mood-badge" class="mood-badge calm">calm</span>
+          <button id="reset-btn" title="Start a new conversation">
+            New chat
+          </button>
+          <label class="voice-toggle">
+            <input type="checkbox" id="voice-toggle" /> Voice
+          </label>
+        </div>
+      </header>
+
+      <div id="chat-window" class="chat-window">
+        <div class="msg tony">
+          <div class="bubble">
+            Yeah, whaddya want? Siddown, tell me what's on your mind. Type
+            <code>/advice &lt;topic&gt;</code> if you want some real wisdom.
+          </div>
+        </div>
+      </div>
+
+      <form id="chat-form" class="chat-form">
+        <input
+          id="chat-input"
+          type="text"
+          placeholder="Say somethin'..."
+          autocomplete="off"
+        />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
